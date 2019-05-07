@@ -11,10 +11,11 @@ h1{
     border: 2px black solid;
     width:100px;
     margin: 5px;
+
 }
-hr{
+.hr{
     height: 2px;
-    width: 85px;
+    width: 100px;
     background-color: black;
     border: none;
 }
