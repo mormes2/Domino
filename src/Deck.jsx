@@ -10,7 +10,6 @@ class Deck extends Component {
     render() {
         return (
             <div>
-                <p>I am the Deck component </p>
             </div>
         );
     }

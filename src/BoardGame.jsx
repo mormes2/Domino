@@ -10,8 +10,6 @@ class BoardGame extends Component {
     render() {
         return (
             <div>
-                <p>BoardGame component</p>
-
             </div>
         );
     }

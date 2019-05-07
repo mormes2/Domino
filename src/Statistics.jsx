@@ -10,7 +10,6 @@ class Statistics extends Component {
     render() {
         return (
             <div>
-                <p>I am the Statistics component </p>
             </div>
         );
     }
