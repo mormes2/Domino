@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Cube from './Cube.jsx'
 
+
 class CubeList extends Component {
     constructor() {
         super();
@@ -8,24 +9,26 @@ class CubeList extends Component {
            deck: []
 
         };
+
+        var decklist = this.state.deck;
     }
 
-
-
-
-
-    render() {
-        this.state.deck.push(<Cube firstSection={3}  secondSection={4}/>);
-        this.state.deck.push(<Cube firstSection={6}  secondSection={6}/>);
-
+   render() {
+        var newkey;
+        for(var i=0; i<7;i++ )
+        {
+            for(var j=i; j<7;j++)
+            {
+                newkey = i+' '+j;
+                this.state.deck.push(<Cube firstSection={i} secondSection={j} key={newkey}/>);
+            }
+        }
 
         return (
             <div>
                 <h1>This is the cube list</h1>
-                <p>{this.state.deck[0]}</p>
-                <p>{this.state.deck[1]}</p>
-
-
+                <p>The number of cubes {this.state.deck.length}</p>
+                {this.state.deck}
             </div>
         );
     }
