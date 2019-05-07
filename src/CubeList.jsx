@@ -20,7 +20,7 @@ class CubeList extends Component {
             for(var j=i; j<7;j++)
             {
                 newkey = i+' '+j;
-                this.state.deck.push(<Cube firstSection={i} secondSection={j} key={newkey}/>);
+                this.state.deck.push(<Cube firstSection={i} secondSection={j} key={newkey} id={newkey}/>);
             }
         }
 
